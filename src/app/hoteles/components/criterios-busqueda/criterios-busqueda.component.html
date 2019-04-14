@@ -1,0 +1,39 @@
+<form class="form busqueda" [formGroup]="form">
+  <div class="container">
+    <div class="card-body">
+      <h4 class="filtro">Encuentra Hoteles</h4>
+      <div class="row">
+        <div class="form-group col-md-3">
+          <label for="sel1">Voy a hospedarme en</label>
+          <select formControlName="ciudad" class="form-control" id="sel1">
+            <option>Medellin</option>
+            <option>Cartagena</option>
+            <option>Bogota</option>
+            <option>Villavicencio</option>
+          </select>
+        </div>
+        <div class="form-group col-md-3">
+          <label for="sel1">Categoria</label>
+          <select formControlName="categoria" class="form-control" id="sel1">
+            <option>media</option>
+            <option>alta</option>
+            <option>baja</option>
+          </select>
+        </div>
+        <div class="form-group col-md-2">
+          <label for="usr">Precio desde:</label>
+          <input type="number" formControlName="precioDe" class="form-control" id="usr">
+        </div>
+        <div class="form-group col-md-2">
+          <label for="usr">Precio Hasta:</label>
+          <input type="number" formControlName="precioHasta" class="form-control" id="usr">
+        </div>
+        <div class="form-group col-md-2" class="limpiar">
+                <button type="button" class="btn btn-default btn-sm" (click)="limpiarFormulario()">
+                  <span class="glyphicon glyphicon-filter"></span> Limpiar 
+                </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

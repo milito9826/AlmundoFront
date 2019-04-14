@@ -1,0 +1,51 @@
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light .bg-light">
+    <br>
+    <br>
+    <br>
+    <img class="icon-actions" src="./assets/img/content/logoAlmundo.png">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <strong>OFERTAS</strong>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <strong>EXPERTOS</strong>
+      &nbsp; &nbsp;
+    </div>
+    <div>
+      <button type="button" class="btn bg-secondary text-white">
+        <span class="glyphicon glyphicon-earphone"></span>&nbsp;(+57) 15186310</button>
+    </div>
+    &nbsp; &nbsp;
+    <div>
+      <button type="button" class="btn bg-success text-white">
+        <span class="glyphicon glyphicon-off"></span>
+      </button>
+    </div>
+  </nav>
+  <ul class="nav nav-tabs">
+    <li class="active">
+      <a href="#">
+        <span class="glyphicon glyphicon-tower"></span>&nbsp;&nbsp;Alojamientos</a>
+    </li>
+  </ul>
+</div>
+<br>
+<div class="slider">
+  <app-criterios-busqueda
+  (busqueda)="buscarHoteles($event)">
+</app-criterios-busqueda>
+  <hr>
+  <app-slider-hoteles *ngIf="hoteles"
+   [hoteles]="hoteles">
+  </app-slider-hoteles>
+  <hr>
+  <app-footer></app-footer>
+</div>

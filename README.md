@@ -1,3 +1,6 @@
+#INICIAR APLICACIÓN
+Iniciar en la terminal con ng `ng serve`
+
 # AlmundoFront
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.3.
