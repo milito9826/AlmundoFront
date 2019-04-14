@@ -1,4 +1,5 @@
 #INICIAR APLICACIÓN
+instalar modulos sobre la raiz del proyecto `npm install`
 Iniciar en la terminal con ng `ng serve`
 
 # AlmundoFront
